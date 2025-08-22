@@ -19,70 +19,70 @@ Tech: Uses the /api/plan endpoint, considering user inputs for age, sex, activit
 
 ### Architecture
 # Frontend
-Framework: React with Vite
-State Management: Zustand
-Routing: React Router
-Styling: TailwindCSS
-Structure:
-Pages: Search, Planner, Grocery, Recipe
-Components: IngredientInput, RecipeCard, RecipeList, NutritionPanel, GroceryList
+-Framework: React with Vite
+-State Management: Zustand
+-Routing: React Router
+-Styling: TailwindCSS
+-Structure:
+-Pages: Search, Planner, Grocery, Recipe
+-Components: IngredientInput, RecipeCard, RecipeList, NutritionPanel, -GroceryList
 
 ---
 
 # Backend
-Framework: Flask
-Database: Optional SQLite (via SQLAlchemy)
-Validation: Marshmallow
-External API: Spoonacular
+-Framework: Flask
+-Database: Optional SQLite (via SQLAlchemy)
+-Validation: Marshmallow
+-External API: Spoonacular
 
-Services:
-  Spoonacular API client
-  Nutrition helpers
-  Meal planner logic
+# Services:
+  -Spoonacular API client
+  -Nutrition helpers
+  -Meal planner logic
 
-Setup Instructions
-Prerequisites
-  Node.js
-  Python 3.10+
-  Spoonacular API Key
+**Setup Instructions**
+-Prerequisites
+  -Node.js
+  -Python 3.10+
+  -Spoonacular API Key
 
 Backend Setup
 --
-Clone the repository and navigate to the backend directory.
-Create a .env file with the following:
-  plaintext
-  FLASK_ENV=development
-  PORT=5001
-  SPOONACULAR_API_KEY=your_api_key_here
-  ALLOWED_ORIGINS=http://localhost:5173
-  DATABASE_URL=sqlite:///app.db
+-Clone the repository and navigate to the backend directory.
+-Create a .env file with the following:
+  -plaintext
+  -FLASK_ENV=development
+  -PORT=5001
+  -SPOONACULAR_API_KEY=your_api_key_here
+  -ALLOWED_ORIGINS=http://localhost:5173
+  -DATABASE_URL=sqlite:///app.db
 
-Install Python dependencies:
-  bash
-  pip install -r requirements.txt
-Start the Flask server:
-bash
-  python app.py
-Frontend Setup
-  Navigate to the frontend directory.
-  Install frontend dependencies:
-    bash
-    npm install
-  Start the React development server:
-    bash
-    npm run dev
+# Install Python dependencies:
+  -bash
+  -pip install -r requirements.txt
+-Start the Flask server:
+-bash
+  -python app.py
+-**Frontend Setup**
+  -Navigate to the frontend directory.
+  -Install frontend dependencies:
+    -bash
+    -npm install
+  -Start the React development server:
+    -bash
+    -npm run dev
     
 Deployment
 --
-Refer to the deployment section in the project documentation for instructions on deploying using Docker or other services.
+-Refer to the deployment section in the project documentation for instructions on deploying using Docker or other services.
 
 Contribution Guidelines
 --
-Fork the repository
-Create a new branch (git checkout -b feature/YourFeature)
-Commit your changes (git commit -m 'Add some feature')
-Push to the branch (git push origin feature/YourFeature)
-Create a new Pull Request
+-Fork the repository
+-Create a new branch (git checkout -b feature/YourFeature)
+-Commit your changes (git commit -m 'Add some feature')
+-Push to the branch (git push origin feature/YourFeature)
+-Create a new Pull Request
 
 License
 --
